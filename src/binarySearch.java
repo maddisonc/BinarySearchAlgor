@@ -28,6 +28,17 @@ public class binarySearch
 
         } // end for loop
 
+        if (arr.length < 4)
+        {
+            for (int i = 0; i < arr.length; i++)
+            {
+             if (arr[i] == target)
+             {
+                 return i;
+             }
+            }
+        }
+
         /*
         if (target != arr[midTemp]) {
             return -1;
